@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget{
 
-  final String descrip = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices arcu a mi interdum tempor. In consectetur at libero eget viverra. Mauris eget risus non nibh ultrices rhoncus. Aenean consectetur in orci quis efficitur. Aliquam vitae ante dolor. Nam volutpat felis dolor, vitae semper nunc rhoncus vel. Donec ac ante in nisi mollis facilisis a sit amet sapien. Curabitur accumsan tortor nec urna sollicitudin laoreet. Integer eu blandit elit. Pellentesque eget odio a nunc iaculis convallis.";
+
+  String namePlace;
+  int star;
+  String descriptionPlace;
+
+  DescriptionPlace(this.namePlace, this.star, this.descriptionPlace);
+
+
 
 
   @override
@@ -15,7 +22,7 @@ class DescriptionPlace extends StatelessWidget{
         left: 20.0,
         right: 20.0
       ),
-      child: new Text(descrip,
+      child: new Text(descriptionPlace,
         style: TextStyle(
           fontSize: 16.0,
           fontWeight: FontWeight.bold,
@@ -23,6 +30,35 @@ class DescriptionPlace extends StatelessWidget{
         ),
         textAlign: TextAlign.justify,
       ),
+    );
+
+
+    final star_border = Container(
+      margin: EdgeInsets.only(
+          top: 323.0,
+          right: 3.0
+      ),
+
+      child: Icon(
+        Icons.star_border,
+        color: Color(0xFFf2C611),
+      ),
+
+    );
+
+
+
+    final star_half = Container(
+      margin: EdgeInsets.only(
+          top: 323.0,
+          right: 3.0
+      ),
+
+      child: Icon(
+        Icons.star_half,
+        color: Color(0xFFf2C611),
+      ),
+
     );
 
 
@@ -51,7 +87,7 @@ class DescriptionPlace extends StatelessWidget{
           ),
 
           child: Text(
-            "Duwili Ella",
+            namePlace,
             style: TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.w900
@@ -66,7 +102,7 @@ class DescriptionPlace extends StatelessWidget{
               star,
               star,
               star,
-              star
+              star_border
             ],
           )
         ],

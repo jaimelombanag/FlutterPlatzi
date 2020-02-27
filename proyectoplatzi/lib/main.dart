@@ -4,7 +4,10 @@ import 'description_place.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+
+  final String descrip = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices arcu a mi interdum tempor. In consectetur at libero eget viverra. Mauris eget risus non nibh ultrices rhoncus. Aenean consectetur in orci quis efficitur. Aliquam vitae ante dolor. Nam volutpat felis dolor, vitae semper nunc rhoncus vel. Donec ac ante in nisi mollis facilisis a sit amet sapien. Curabitur accumsan tortor nec urna sollicitudin laoreet. Integer eu blandit elit. Pellentesque eget odio a nunc iaculis convallis.";
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hola Mundo Feliz"),
         ),
-        body: new DescriptionPlace(),
+        body: new DescriptionPlace("Aca va el titulo", 4, descrip),
       ),
     );
   }
