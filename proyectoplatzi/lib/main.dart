@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:proyectoplatzi/review.dart';
 import 'description_place.dart';
+import 'review_list.dart';
+
+
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
-  final String descrip = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices arcu a mi interdum tempor. In consectetur at libero eget viverra. Mauris eget risus non nibh ultrices rhoncus. Aenean consectetur in orci quis efficitur. Aliquam vitae ante dolor. Nam volutpat felis dolor, vitae semper nunc rhoncus vel. Donec ac ante in nisi mollis facilisis a sit amet sapien. Curabitur accumsan tortor nec urna sollicitudin laoreet. Integer eu blandit elit. Pellentesque eget odio a nunc iaculis convallis.";
-
+  final String descrip =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices arcu a mi interdum tempor. In consectetur at libero eget viverra. Mauris eget risus non nibh ultrices rhoncus. Aenean consectetur in orci quis efficitur. Aliquam vitae ante dolor. Nam volutpat felis dolor, vitae semper nunc rhoncus vel. Donec ac ante in nisi mollis facilisis a sit amet sapien. Curabitur accumsan tortor nec urna sollicitudin laoreet. Integer eu blandit elit. Pellentesque eget odio a nunc iaculis convallis.";
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +27,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hola Mundo Feliz"),
-        ),
-        body: new DescriptionPlace("Aca va el titulo", 4, descrip)
-      ),
+          appBar: AppBar(
+            title: Text("Hola Mundo Feliz"),
+          ),
+          //body: new DescriptionPlace("Aca va el titulo", 4, descrip)),
+          body: ReviewList()),
     );
   }
 }
-
-

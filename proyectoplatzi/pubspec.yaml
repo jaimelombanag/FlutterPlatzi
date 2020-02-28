@@ -75,6 +75,8 @@ flutter:
 
   assets:
     - assets/img/people.jpg
+    - assets/img/goku.jpg
+    - assets/img/Goku2.jpg
 
   fonts:
     - family: Lato
