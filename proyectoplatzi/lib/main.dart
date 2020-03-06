@@ -27,9 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-          appBar: AppBar(
-            title: Text("Hola Mundo Feliz"),
-          ),
+
           //body: new DescriptionPlace("Aca va el titulo", 4, descrip)),
           body: Stack(
             children: <Widget>[
