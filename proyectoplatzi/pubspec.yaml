@@ -40,6 +40,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
@@ -71,12 +72,17 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
-
-
   assets:
     - assets/img/people.jpg
     - assets/img/goku.jpg
     - assets/img/Goku2.jpg
+    - assets/img/imag1.jpg
+    - assets/img/imag2.jpg
+    - assets/img/imag3.jpg
+    - assets/img/imag4.jpeg
+    - assets/img/imag5.png
+    - assets/img/imag6.jpg
+    - assets/img/imag7.jpeg
 
   fonts:
     - family: Lato
