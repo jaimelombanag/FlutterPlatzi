@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'platzi_trips.dart';
 
 
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
